@@ -58,11 +58,14 @@ if (isset($_POST['submit_crop']))
 		$_POST['h']
     );
   $img->destroy();
+
+  $has_md5sum_fs = pwg_db_num_rows(pwg_query('SHOW COLUMNS FROM `'.IMAGES_TABLE.'` LIKE "md5sum_fs" '));
   
 	$query='
 SELECT
     id,
     path,
+    '.($has_md5sum_fs ? 'md5sum_fs,' : '').'
     representative_ext
   FROM '.IMAGES_TABLE.'
   WHERE id = '.(int)$_POST['image_id'].'
@@ -74,11 +77,23 @@ SELECT
   }
 	
 	sync_metadata(array($row['id']));
-	
-	$query = 'UPDATE '.IMAGES_TABLE .'
-    			 	  SET coi=NULL
-   						WHERE id='.$row['id'];
- 	pwg_query($query);	
+
+  $datas = array('coi' => null);
+
+  $activity_details = array('action' => 'crop');
+
+  if ($has_md5sum_fs)
+  {
+    $md5sum = md5_file($row['path']);
+    $datas['md5sum_fs'] = $md5sum;
+
+    $activity_details['md5sum_fs_previous'] = $row['md5sum_fs'];
+    $activity_details['md5sum_fs_new'] = $md5sum;
+  }
+
+  single_update(IMAGES_TABLE, $datas, array('id' => $row['id']));
+
+  pwg_activity('photo', $row['id'], 'edit', $activity_details);
 		
   delete_element_derivatives($row); 
   
