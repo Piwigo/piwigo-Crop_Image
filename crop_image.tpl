@@ -1,7 +1,9 @@
-<div class="titrePage">
-	<h2>{$TITLE} &#8250; {'Edit photo'|@translate} {$TABSHEET_TITLE}</h2>
-</div>
 {if $IN_CROP}
+{html_style}
+.cropImage-ratio label {
+	margin-right:10px;
+}
+{/html_style}
 
 {combine_css path="themes/default/js/plugins/jquery.Jcrop.css"}
 {combine_script id='jquery.jcrop' load='footer' require='jquery' path='themes/default/js/plugins/jquery.Jcrop.min.js'}
@@ -105,7 +107,7 @@ function jOnChange(sel) {ldelim}
 <fieldset>
   <legend>{'Crop Photo'|@translate}</legend>
   {'Choose the part of the photo you want to keep'|@translate}<br>
-  <img id="jcrop" src="{$picture.banner_src}?{1|rand:200}" width="{$crop.display_width}" height="{$crop.display_height}">
+  <img id="jcrop" src="{$picture.banner_src}?{$random_avoid_cache_key}" width="{$crop.display_width}" height="{$crop.display_height}">
   
   <ul>
     <li><b>{'Width'|@translate}:</b> <span id="width"></span>px</li>
@@ -121,13 +123,19 @@ function jOnChange(sel) {ldelim}
   <input type="hidden" name="picture_file" value="{$picture.path}">
 	<input type="hidden" name="image_ratio" id="image_ratio" value="{$image_ratio}">
   <input type="hidden" name="image_id" value="{$image_id}">
-	<fieldset>
-  <legend>{'Aspect Ratio'|@translate}</legend>
-  	{'Square'|@translate}<input type="radio" value="1/1" name="ratio">&nbsp;&nbsp;4:5<input type="radio" value="4/5" name="ratio">&nbsp;&nbsp;4:3<input type="radio" value="4/3" name="ratio">&nbsp;&nbsp;5:7<input type="radio" value="5/7" name="ratio">&nbsp;&nbsp; 16:9<input type="radio" value="16/9" name="ratio">&nbsp;&nbsp; 2.35:1<input type="radio" value="2.35/1" name="ratio">&nbsp; 
-  	{'None'|@translate}<input type="radio" value="0" checked name="ratio">&nbsp;&nbsp; {'Original'|@translate}<input type="radio" value="original" name="ratio">&nbsp;&nbsp;{'Custom'|@translate}<input type="radio" value="C" name="ratio">&nbsp;<input type="text" name="ratioC" id="ratioC" value="" size="5" disabled/>
+  <fieldset class="cropImage-ratio">
+    <legend>{'Aspect Ratio'|@translate}</legend>
+    <label><input type="radio" value="1/1" name="ratio"> {'Square'|@translate}</label>
+    <label><input type="radio" value="4/5" name="ratio"> 4:5</label>
+    <label><input type="radio" value="4/3" name="ratio"> 4:3</label>
+    <label><input type="radio" value="5/7" name="ratio"> 5:7</label>
+    <label><input type="radio" value="16/9" name="ratio"> 16:9</label>
+    <label><input type="radio" value="2.35/1" name="ratio"> 2.35:1</label>
+    <label><input type="radio" value="0" checked name="ratio"> {'None'|translate}</label>
+    <label><input type="radio" value="original" name="ratio"> {'Original'|translate}</label>
+    <label><input type="radio" value="C" name="ratio"> {'Custom'|translate}&nbsp;<input type="text" name="ratioC" id="ratioC" value="" size="5" disabled/> (examples: 2/1 or 1/3)</label>
 	</fieldset>
   <input type="submit" name="submit_crop" value="{'Submit'|@translate}">
-  <input type="submit" name="cancel_crop" value="{'Cancel'|@translate}">
 </fieldset>
 </form>
 {/if}

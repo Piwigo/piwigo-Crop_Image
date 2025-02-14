@@ -37,16 +37,11 @@ $admin_photo_base_url = get_root_url().'admin.php?page=photo-'.$_GET['image_id']
 // +-----------------------------------------------------------------------+
 // | Process form                                                          |
 // +-----------------------------------------------------------------------+
+
 load_language('plugin.lang', PHPWG_PLUGINS_PATH.basename(dirname(__FILE__)).'/');
 
-// cancel crop
-if (isset($_POST['cancel_crop']))
-{
-	  redirect($admin_photo_base_url);
-}
-
 // apply crop and redirect
-else if (isset($_POST['submit_crop']))
+if (isset($_POST['submit_crop']))
 {
   include_once(dirname(__FILE__).'/crop.class.php');
   
@@ -147,6 +142,8 @@ SELECT
       'crop' => get_crop_display($picture),
   		'image_id' => (int)@$_GET['image_id'],
 			'image_ratio' => $RatioWidth/$RatioHeight,
+      'random_avoid_cache_key' => generate_key(10),
+      'ADMIN_PAGE_TITLE' => l10n('Edit photo').' <span class="image-id">#'.$_GET['image_id'].'</span>',
       ));
   }
 }
