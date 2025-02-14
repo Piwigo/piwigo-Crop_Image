@@ -1,0 +1,1 @@
+Permet retallar imatges ja pujades a la galeria. No es permet desfer el retall. Un cop retallada, haureu de tornar a pujar la foto.

@@ -1,0 +1,1 @@
+Muliggjør beskjæring av allerede opplastede bilder i galleiet men vanlig funksjoner. Det er ikke mulig å angre beskjæring når dette er gjort. Da må du laste opp bilde på nytt.

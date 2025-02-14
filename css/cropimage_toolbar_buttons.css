@@ -1,0 +1,47 @@
+.ci-icon {
+	display: inline-block; /*IE6 does not get this correctly*/
+	text-indent: -9999px; overflow: hidden; background-repeat: no-repeat;
+	width: 26px; height: 26px; background-image: url(cropimage_sprite.png);
+	vertical-align: bottom;
+}
+
+.ci-icon-cropimage-sylvia{
+background-position: 0 0;
+width: 26px;
+height: 26px;
+}
+A:hover .ci-icon-cropimage-sylvia{
+background-position: -26px 0;
+width: 26px;
+height: 26px;
+}
+.ci-icon-cropimage-elegant{
+background-position: 0 -26px;
+width: 26px;
+height: 26px;
+}
+A:hover .ci-icon-cropimage-elegant{
+background-position: -26px -26px;
+width: 26px;
+height: 26px;
+}
+.ci-icon-cropimage-clear{
+background-position: 0 -52px;
+width: 26px;
+height: 26px;
+}
+A:hover .ci-icon-cropimage-clear{
+background-position: -26px -52px;
+width: 26px;
+height: 26px;
+}
+.ci-icon-cropimage-dark{
+background-position: 0 -78px;
+width: 26px;
+height: 26px;
+}
+A:hover .ci-icon-cropimage-dark{
+background-position: -26px -78px;
+width: 26px;
+height: 26px;
+}

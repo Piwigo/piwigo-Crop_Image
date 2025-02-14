@@ -1,0 +1,1 @@
+Umożliwia kadrowanie obrazów już przesłanych do galerii. Kadrowania nie można cofnąć, trzeba od nowa wgrać zdjęcie.

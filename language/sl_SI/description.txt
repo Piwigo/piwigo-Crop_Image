@@ -1,0 +1,1 @@
+Omogoča obrezovanje fotografij, naloženih v galerijo - osnovna funkcionalnost. Ko je fotografija obrezana ni mogoča uporaba funkcije razveljavi, potrebno je ponovno naložiti fotografijo.

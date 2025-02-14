@@ -1,0 +1,1 @@
+Consente di ritagliare le immagini già caricate nella galleria, le funzionalità di base. Impossibile annullare il taglio una volta ritagliata, si dovrà ricaricare la foto.

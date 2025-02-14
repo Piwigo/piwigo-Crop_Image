@@ -1,0 +1,1 @@
+Maakt het mogelijk om reeds naar de galerij geuploade afbeeldingen bij te snijden. NB: Plugin heeft geen "Ongedaan maken"-knop. Om de oorspronkelijke afbeelding terug te krijgen, zal deze opnieuw geupload moeten worden.

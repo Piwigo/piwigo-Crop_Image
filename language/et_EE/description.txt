@@ -1,0 +1,1 @@
+Võimaldab pilte lõigata, mis on juba galeriisse üles laetud. Tegevist ei ole võimalik "tagasi võtta", selleks tuleb pilt uuesti galeriisse laadida.

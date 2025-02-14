@@ -1,0 +1,1 @@
+Möjliggör beskärning av redan uppladdade bilder, enkel funktionalitet. Det går inte att ångra beskärning, bilden måste laddas upp på nytt ifall du beskurit för mycket eller fel.

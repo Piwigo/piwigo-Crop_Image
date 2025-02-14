@@ -1,0 +1,1 @@
+Gør det muligt at beskrære fotografier, der er uploadet til galleriet; kun basal funktionalitet.  Det er ikke muligt at fortryde en beskæring, når den først er udført; man skal i stedet genuploade billedet.

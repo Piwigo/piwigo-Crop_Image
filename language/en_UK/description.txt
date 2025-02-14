@@ -1,0 +1,1 @@
+Enables to Crop Images already uploaded to the gallery, basic functionality.  Unable to undo the crop once cropped, will have to reload the photo.

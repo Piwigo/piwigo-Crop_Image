@@ -1,0 +1,1 @@
+Mahdollistaa galleriassa olevien kuvien rajaamisen. Muutokset ovat pysyviä, joten rajaamattoman kuvan saa palautettua ainoastaan lataamalla sen uudestaan galleriaan.

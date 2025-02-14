@@ -1,0 +1,1 @@
+Permite recortar imágenes ya subidas a la galería. No se puede deshacer el recorte (para ello la imagen debería subirse de nuevo al servidor).

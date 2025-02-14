@@ -1,0 +1,1 @@
+Iespējo galerijā ielādētu Attēlu Apgriešanu pamatfunkcionalitātes līmenī. Nevar atcelt attēla apgriešanu, ja tas jau ir apgriezts, attēls jāielādē no jauna.

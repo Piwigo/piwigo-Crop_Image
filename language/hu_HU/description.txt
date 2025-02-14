@@ -1,0 +1,1 @@
+Lehetővé teszi a galériába már feltöltött képekhez a képkivágás alapvető funkcióinak használatát. A műveletet nem lehet visszavonni, a képet újból fel kell tölteni.

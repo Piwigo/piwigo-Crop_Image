@@ -1,0 +1,2 @@
+Ce greffon permet de recadrer (fonction basique) les photos déjà versées dans la galerie.
+Il est impossible d'annuler le recadrage une fois celui-ci effectué; il faudra recharger la photo.

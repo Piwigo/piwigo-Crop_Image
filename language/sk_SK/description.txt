@@ -1,0 +1,1 @@
+Umožňuje orezávať fotky, ktoré sú už v galérii. Orezané fotky nemožno vrátiť späť, budete musieť znovu načítať fotografiu.

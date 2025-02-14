@@ -1,0 +1,1 @@
+Gerir kleift að klippa myndir sem þegar hefur verið hlaðið upp í myndasafnið, grunnvirkni. Ekki er hægt að afturkalla kropp þegar mynd hefur verið kroppuð, verður að endurhlaða myndina.

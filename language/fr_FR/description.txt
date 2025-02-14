@@ -1,0 +1,2 @@
+Ce plugin permet de recadrer (fonction basique) les photos déjà téléversées dans la galerie.
+Il est impossible d'annuler le recadrage une fois celui-ci effectué; il faudra recharger la photo.

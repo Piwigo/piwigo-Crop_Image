@@ -1,0 +1,1 @@
+Aktivace Crop Images - ořez fotografií uploadovaných do galerie, základní funkce. Deaktivace - pro navrácení proběhlých změn je nutné následně obnovit fotku.

@@ -1,0 +1,1 @@
+Permite recortar as imagens já carregadas na galeria, funcionalidade básica.Sem possibilidade de reposição após executado o recorte, a foto terá de ser recarregada. 

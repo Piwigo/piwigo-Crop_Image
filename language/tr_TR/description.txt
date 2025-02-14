@@ -1,0 +1,1 @@
+Galeride var olan fotoğraflar için temel fotoğraf traşlama işlevi sunar. (Bir kez uygulandıktan sonra vazgeçilmek istenirse geri alınamaz ve bu durumda fotoğrafın tekrar yüklenmesi gerekir.)
