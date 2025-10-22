@@ -14,4 +14,4 @@ $lang['None'] = 'Enginn';
 $lang['Original'] = 'Upprunalegt';
 $lang['Photo Cropped'] = 'Mynd kroppuð';
 $lang['Square'] = 'Ferningur';
-$lang['Unknown Photo ID'] = 'Óþekkt mynda auðkenni';
+$lang['Unknown Photo ID'] = 'Óþekkt auðkenni myndar';
